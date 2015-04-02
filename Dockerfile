@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-MAINTAINER Stephen Adams <stephen.adams@dm.duke.edu>
+MAINTAINER Knut Ahlers <knut@ahlers.me>
 
 ADD https://github.com/inspircd/inspircd/archive/v2.0.18.tar.gz /src/
 
