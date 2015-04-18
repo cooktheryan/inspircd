@@ -16,11 +16,11 @@ RUN useradd -u 10000 inspircd && cd /src && tar -xzvf v2.0.19.tar.gz && cd inspi
 # ensure ownership of /inspircd by inspircd user
 RUN chown -R inspircd:inspircd /inspircd 
 
-# expose ports 6667 through 6697
+# expose ports 6667 and 6697
 EXPOSE 6667 6697
 
 # mount a volume for configs (should use git pulls to yank current configurations)
 VOLUME ["/root/inspircd/conf"]
 
 # launch inspircd with --nofork so it stays in the foreground
-ENTRYPOINT ["/inspircd/bin/inspircd --nofork"]
+ENTRYPOINT ["/inspircd/inspircd", "start", "--nofork"]
