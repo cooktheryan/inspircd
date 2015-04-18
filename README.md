@@ -6,7 +6,7 @@ This dockerfile includes a build of inspircd that contains the m_ldapauth.cpp mo
 
 ## Base Docker Image
 
-- [debian](https://registry.hub.docker.com/_/debian/)
+- [centos](https://registry.hub.docker.com/_/centos/)
 
 ## Installation
 
