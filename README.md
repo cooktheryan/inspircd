@@ -21,6 +21,6 @@ Create a directory containing the configuration for the [InspIRCd](http://www.in
 Then launch it with your configuration:
 
 ```
-docker run -d -p 6667:6667 -v /path/to/configure:/inspircd/conf stevehnh/inspircd
+docker run -d -p 6667:6667 -v /path/to/config:/inspircd/conf stevehnh/inspircd
 ```
 
